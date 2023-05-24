@@ -1,0 +1,33 @@
+<h1>All Blog Posts</h1>
+{{#if logged_in}}
+  <a href="/dashboard">Dashboard</a>
+  <a href="/logout">Logout</a>
+{{else}}
+  <a href="/login">Login</a>
+  <a href="/signup">Signup</a>
+{{/if}}
+
+{{#each serialized_posts}}
+  <div>
+    <h2>{{title}}</h2>
+    {{#if user}}
+      <p>By {{user.username}}</p>
+    {{/if}}
+    <p>{{content}}</p>
+    <p>{{created_at}}</p>
+  </div>
+
+  {{#each comments}}
+    <div>
+      {{#if user}}
+        <p>{{user.username}} commented on {{../title}}:</p>
+      {{else}}
+        <p>Anonymous commented on {{../title}}:</p>
+      {{/if}}
+      <p>{{content}}</p>
+      <p>{{created_at}}</p>
+    </div>
+  {{/each}}
+
+{{/each}}
+

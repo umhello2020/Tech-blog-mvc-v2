@@ -1,0 +1,26 @@
+[
+    {
+    "user_id": 1,
+    "blog_post_id": 1,
+    "content": "Great app! I just got notified about a concert nearby and it was awesome.",
+    "date": "2023-05-02T14:30:00.000Z"
+    },
+    {
+    "user_id": 2,
+    "blog_post_id": 2,
+    "content": "This is so helpful for keeping up with my technical skills! Thanks for making this app.",
+    "date": "2023-05-03T10:45:00.000Z"
+    },
+    {
+    "user_id": 3,
+    "blog_post_id": 3,
+    "content": "This game is so much fun! I love the challenging levels.",
+    "date": "2023-05-03T16:15:00.000Z"
+    },
+    {
+    "user_id": 3,
+    "blog_post_id": 2,
+    "content": "I'm having trouble with question 7. Any tips?",
+    "date": "2023-05-04T08:20:00.000Z"
+    }
+    ]
